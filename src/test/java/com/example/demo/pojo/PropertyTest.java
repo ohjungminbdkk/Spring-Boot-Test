@@ -18,11 +18,15 @@ public class PropertyTest {
 
 	@Autowired
 	FruitProperty fruitProperty;
+	
+	@Autowired
+	FruitProperties fruitProperties;
 
 	@Test
 	public void test() {
 		List<Map> fruitData = fruitProperty.getList();
-
+		assertThat(fruitProperties.getColorName(), is("green"));
+			
 		assertThat(fruitData.get(0).get("name"), is("banana"));
 		assertThat(fruitData.get(0).get("color"), is("yellow"));
 

@@ -11,3 +11,8 @@ fruit:
       color: red
    -  name: water melon
       color: green
+      
+//fruit.color_name: green
+//fruit.colorName: green
+//fruit.colorname: green
+fruit.color-name: green
